@@ -1,3 +1,5 @@
+![Drone footage banner](assets/sunrise.png)
+
 # From 6K to 4K60
 
 *A practical guide to bringing high-resolution drone footage down to a spec you can actually watch*
