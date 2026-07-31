@@ -91,7 +91,7 @@ The approach in brief:
 - **I/O:** Copy each source to local NVMe, encode there, and copy the result back — never encode directly across a cloud-storage mount.
 - **Robustness:** The job is idempotent (skips files already done), never lets one bad clip fail the batch, and writes a status manifest so you can see per-file durations, sizes, and errors.
 
-The full, ready-to-run Databricks notebook and sample 6K clips are here: **https://drive.google.com/drive/folders/1N2ykyFvGJ0AXhYESVw2mU1JUQAjaWBhL?usp=sharing**. The notebook already includes the timestamp fix described in the next section, so it works correctly on real drone footage out of the box.
+The full, ready-to-run Databricks notebook is **batch_transcode_4k60_hevc.py** and sample 6K video clips are here: **https://drive.google.com/drive/folders/1N2ykyFvGJ0AXhYESVw2mU1JUQAjaWBhL?usp=sharing**. The notebook already includes the timestamp fix described in the next section, so it works correctly on real drone footage out of the box.
 
 ## Debugging: When Your Output Is Tiny and Plays Like a Slideshow
 
