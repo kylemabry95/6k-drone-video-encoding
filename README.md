@@ -41,6 +41,7 @@ A crucial mental model: file size is **bitrate × duration**, set by the codec a
 ffmpeg -i "input.mp4" \
   -vf "scale=3840:2160:flags=lanczos,fps=60000/1001" \
   -c:v prores_ks -profile:v 3 -pix_fmt yuv422p10le \
+  -threads 8 -filter_threads 8 \
   -color_primaries bt709 -color_trc bt709 -colorspace bt709 \
   -c:a pcm_s16le \
   "output_4k60_prores.mov"
